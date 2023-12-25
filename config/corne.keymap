@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -47,10 +46,10 @@
 
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&none  &kp Q  &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U        &kp I            &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D         &kp F        &kp G        &kp H        &kp J        &kp K            &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &none
+                     &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 2 ENTER  &lt 1 SPACE  &lt 3 BACKSPACE
             >;
         };
 
@@ -63,10 +62,10 @@
 
             label = "num";
             bindings = <
-&none  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &none
-&none  &none         &none         &none         &none         &none           &none     &none     &none     &none      &none   &none
-                                   &kp LGUI      &none         &kp SPACE       &kp RET   &none     &kp RALT
+&none  &kp N1                    &kp N2                  &kp N3                               &kp N4                              &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &none
+&none  &lh_hrm LEFT_CONTROL TAB  &lh_hrm LEFT_ALT GRAVE  &lh_hrm LEFT_SHIFT LEFT_PARENTHESIS  &lh_hrm LEFT_GUI RIGHT_PARENTHESIS  &none        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &none
+&none  &caps_word                &none                   &none                                &none                               &none        &none     &none     &none     &none      &none   &none
+                                                         &kp LGUI                             &none                               &kp SPACE    &kp RET   &none     &kp RALT
             >;
         };
 
@@ -80,9 +79,9 @@
             label = "Raise";
             bindings = <
 &none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &none
-&none  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &none
-                         &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&none  &none     &none   &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &none
+&none  &none     &none   &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &none
+                         &kp LGUI  &none     &kp SPACE    &kp RET    &none      &kp RALT
             >;
         };
 
