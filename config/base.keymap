@@ -136,7 +136,7 @@ ZMK_BEHAVIOR(smart_mouse, tri_state,
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
     ignored-key-positions = <LT2>;
 )
 
@@ -203,6 +203,13 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
+// Launcher: I usually map the OS launcher to <CTL> + <ALT> + <SPACE>
+ZMK_BEHAVIOR(launcher, macro,
+    wait-ms = <0>;
+    tap-ms = <5>;
+    bindings = <&kp LC(LA(SPACE))>;
+)
+
 // Windows sleep key
 ZMK_BEHAVIOR(win_sleep, macro,
     wait-ms = <500>;
@@ -241,7 +248,7 @@ ZMK_LAYER(nav,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &sk LCTRL     &sk LALT      &sk LSHFT     &sk LGUI      ___             X_MM     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     &kp RET         X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     ___           ___           ___           ___           ___             X_MB     &kp INS       &kp TAB       &kp LT        &kp GT        ___             X_RB
+    X_LB     &launcher     ___           ___           ___           ___             X_MB     &kp INS       &kp TAB       &kp LT        &kp GT        ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               ___           ___             X_MH     ___           CANCEL                                                    X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
