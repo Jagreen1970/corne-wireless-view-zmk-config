@@ -147,11 +147,11 @@ ZMK_BEHAVIOR(swapper, tri_state,
 
 // tap: comma | shift + tap: semicolon | cmd + shift + tap: <
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, LGUI, &kp SEMICOLON, &kp LESS_THAN)
+SIMPLE_MORPH(comma_inner_morph, GUI, &kp SEMICOLON, &kp LESS_THAN)
 
 // tap: dot | shift + tap: colon | cmd + shift + tap: >
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
-SIMPLE_MORPH(dot_inner_morph, LGUI, &kp COLON, &kp GREATER_THAN)
+SIMPLE_MORPH(dot_inner_morph, GUI, &kp COLON, &kp GREATER_THAN)
 
 // tap: qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
