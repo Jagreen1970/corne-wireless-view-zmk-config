@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LCTRL}
-  - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
-  - {t: F, h: LGUI}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - {t: J, h: LGUI}
-  - {t: K, h: RSHFT}
-  - {t: L, h: LALT}
-  - {t: '''', h: LCTRL}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
   - Z
   - X
   - C
@@ -31,193 +31,196 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - TAB
-  - {t: LSHFT, h: sticky, s: 'CAPS_W'}
-  - {t: SPACE, h: nav, s: 'dot_spc'}
-  - {t: RET, h: fn}
-  - {t: 'NUM_W', h: num}
-  - {t: BSPC, s: DEL}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-space$$', h: nav, s: .}
+  - {t: '$$mdi:keyboard-space$$', h: fn, s: .}
+  - {t: num, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
   nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PRV_APP
-  - NXT_APP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG DN
-  - PG UP
-  - {t: BSPC, h: LC(BSPC)}
-  - {t: DEL, h: LC(DEL)}
-  - {t: LCTRL, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LSHFT, h: sticky}
-  - {t: LGUI, h: sticky}
-  - {t: ▽, type: trans}
-  - {t: LEFT, h: HOME}
-  - {t: DOWN, h: LC(END)}
-  - {t: UP, h: LC(HOME)}
-  - {t: RIGHT, h: END}
-  - RET
-  - 'LAUNCH'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab-reverse$$
+  - '&swapper'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:format-vertical-align-bottom$$
+  - $$mdi:format-vertical-align-top$$
+  - {t: '$$mdi:backspace$$', h: LA(BSPC)}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: LA(DEL)}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:arrow-left-bold$$', h: HOME}
+  - {t: '$$mdi:arrow-down-bold$$', h: LC(END)}
+  - {t: '$$mdi:arrow-up-bold$$', h: LC(HOME)}
+  - {t: '$$mdi:arrow-right-bold$$', h: END}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - '&launcher'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - INS
-  - TAB
+  - $$mdi:keyboard-tab$$
   - <
   - '>'
-  - ESC
-  - TAB
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - CANCEL
-  - {t: BSPC, s: DEL}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:close-box$$
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
   fn:
   - F12
   - F7
   - F8
   - F9
-  - {t: ▽, type: trans}
-  - PP
-  - PREV
-  - VOL UP
-  - NEXT
-  - {t: ▽, type: trans}
-  - {t: F11, h: LCTRL}
-  - {t: F4, h: LALT}
-  - {t: F5, h: LSHFT}
-  - {t: F6, h: LGUI}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: LC(LEFT), h: LGUI}
-  - {t: VOL DN, h: RSHFT}
-  - {t: LC(RIGHT), h: LALT}
-  - {t: RET, h: LCTRL}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:play-pause$$
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:chevron-double-left$$
+  - {t: LC(DOWN), h: '$$mdi:apple-keyboard-command$$'}
+  - {t: LC(UP), h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - F10
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LC(UP)
-  - LC(DOWN)
-  - MUTE
-  - ESC
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: BSPC, s: DEL}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
   num:
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '0', h: LCTRL}
-  - {t: '4', h: LALT}
-  - {t: '5', h: LSHFT}
-  - {t: '6', h: LGUI}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: RET, h: LCTRL}
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - CANCEL
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: BSPC, s: DEL}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: LA(BSPC)}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$', s: $}
+  - {t: '5', h: '$$mdi:apple-keyboard-shift$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-command$$', s: ^}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:close-box$$
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
   sys:
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&sys_reset'
-  - '&sys_reset'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - TAB
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: BSPC, s: DEL}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
 combos:
 - p: [1, 2]
-  k: ESC
+  k: $$mdi:keyboard-esc$$
   l: [base, nav, num]
 - p: [2, 3]
-  k: RETURN
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [base, nav, num]
 - p: [11, 12]
-  k: {t: TAB}
+  k: $$mdi:keyboard-tab$$
   l: [base, nav, num]
 - p: [12, 13]
-  k: {t: 'repeat'}
+  k: $$mdi:repeat-once$$
   l: [base, nav, num]
 - p: [21, 23]
-  k: CUT
+  k: $$mdi:content-cut$$
   l: [base, nav, num]
+  a: bottom
 - p: [21, 22]
-  k: COPY
+  k: $$mdi:content-copy$$
   l: [base, nav, num]
+  a: bottom
 - p: [22, 23]
-  k: PASTE
+  k: $$mdi:content-paste$$
   l: [base, nav, num]
+  a: bottom
 - p: [6, 7]
-  k: BSPC
+  k: {t: '$$mdi:backspace$$', type: backspace}
   l: [base, nav, num]
 - p: [7, 8]
-  k: DEL
+  k: $$mdi:backspace-reverse-outline$$
   l: [base, nav, num]
 - p: [16, 17]
-  k: {t: (, s: <}
+  k: {h: (, s: <}
   l: [base, num]
 - p: [17, 18]
-  k: {t: ), s: '>'}
+  k: {h: ), s: '>'}
   l: [base, num]
 - p: [16, 17]
   k: <
@@ -226,10 +229,10 @@ combos:
   k: '>'
   l: [nav]
 - p: [26, 27]
-  k: '['
+  k: {h: '[', s: '{'}
   l: [base, num]
 - p: [27, 28]
-  k: ']'
+  k: {h: ']', s: '}'}
   l: [base, num]
 - p: [26, 27]
   k: '{'
@@ -256,7 +259,7 @@ combos:
   k: \
   l: [base, nav, num]
 - p: [13, 23]
-  k: '='
+  k: {h: '=', s: +}
   l: [base, nav, num]
 - p: [14, 24]
   k: '~'
@@ -277,7 +280,7 @@ combos:
   k: _
   l: [base, nav, num]
 - p: [16, 26]
-  k: '-'
+  k: {h: '-', s: _}
   l: [base, nav, num]
 - p: [17, 27]
   k: /
