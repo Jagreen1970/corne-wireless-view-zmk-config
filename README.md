@@ -38,7 +38,7 @@ Get it [here](https://eurkey.steffen.bruentjen.eu/start.html)!
 
 ## Layout
 
-I'm using [keymap-drawer](https://github.com/caksoylar/keymap-drawe) to generate images below.
+I'm using [keymap-drawer](https://github.com/caksoylar/keymap-drawer) to generate images below.
 
 ### Base layer
 
