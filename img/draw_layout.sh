@@ -11,6 +11,7 @@ keymap -c my_config.yaml draw -s base --keys-only my_keymap.yaml >base_layer.svg
 keymap -c my_config.yaml draw -s num --keys-only my_keymap.yaml >num_layer.svg
 keymap -c my_config.yaml draw -s fn --keys-only my_keymap.yaml >fn_layer.svg
 keymap -c my_config.yaml draw -s nav --keys-only my_keymap.yaml >nav_layer.svg
+keymap -c my_config.yaml draw -s sys --keys-only my_keymap.yaml >sys_layer.svg
 
 ## Draw the combos separately on a blank layer
 keymap -c my_config.yaml draw -s base --combos-only my_keymap.yaml >combos_only.svg

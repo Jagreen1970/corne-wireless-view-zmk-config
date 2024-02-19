@@ -117,3 +117,26 @@ ZMK_BEHAVIOR(win_sleep, macro,
     bindings = <&kp LG(X) &kp U &kp S>;
 )
 
+ZMK_BEHAVIOR(foo, macro,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp DLLR &kp LS(F) &kp O &kp O>;
+)
+
+ZMK_BEHAVIOR(bar, macro,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp DLLR &kp LS(B) &kp A &kp R>;
+)
+
+ZMK_BEHAVIOR(bums, macro,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp DLLR &kp LS(B) &kp U &kp M &kp S>;
+)
+
+ZMK_BEHAVIOR(bude, macro,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp LS(B) &kp U &kp D &kp E>;
+)
