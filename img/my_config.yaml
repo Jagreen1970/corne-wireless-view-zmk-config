@@ -668,6 +668,8 @@ parse_config:
     # Desktop and Apps
     LC(LEFT): $$mdi:chevron-double-left$$
     LC(RIGHT): $$mdi:chevron-double-right$$
+    RC(TAB): "NXT_TAB"
+    RS(RC(TAB)): "PRV_TAB"
 
   zmk_combos:
     combo_bt_clear:

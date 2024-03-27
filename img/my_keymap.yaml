@@ -50,8 +50,8 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: LA(DEL)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: PRV_TAB, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: NXT_TAB, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:arrow-left-bold$$', h: HOME}
   - {t: '$$mdi:arrow-down-bold$$', h: LC(END)}
@@ -60,8 +60,8 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - '&launcher'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:chevron-double-left$$
+  - $$mdi:chevron-double-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - $$mdi:keyboard-tab$$
@@ -90,10 +90,10 @@ layers:
   - {t: F8, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F9, h: '$$mdi:apple-keyboard-command$$'}
   - F10
-  - $$mdi:chevron-double-left$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: LC(DOWN), h: '$$mdi:apple-keyboard-command$$'}
   - {t: LC(UP), h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:chevron-double-right$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - F11
   - F12
@@ -122,12 +122,12 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse$$', type: backspace}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., s: '>'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -137,7 +137,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ',', s: <}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
