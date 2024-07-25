@@ -2,7 +2,7 @@
 #define __config_globals_h__
 
 /* source keypos definitions */
-#include "zmk-helpers/keypos_def/keypos_36keys.h"
+#include "zmk-helpers/key-labels/36.h"
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
