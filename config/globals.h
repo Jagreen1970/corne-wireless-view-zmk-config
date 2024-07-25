@@ -2,13 +2,13 @@
 #define __config_globals_h__
 
 /* source keypos definitions */
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "zmk-helpers/keypos_def/keypos_36keys.h"
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
 #define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
-#include "../zmk-nodefree-config/helper.h"
+#include "zmk-helpers/helper.h"
 
 /* Global key definitions */
 
